@@ -1,0 +1,76 @@
+<!DOCTYPE html><html lang="en" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Hexo</title><link rel="icon" type="image/x-icon" href="/solid-octo-succotash/favicon.ico"><script>var config = {"root":"/solid-octo-succotash/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy","copyFinish":"copied","expand":"expand"}}</script><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/solid-octo-succotash/lib/fontawesome/brands.min.css"><link type="text/css" rel="stylesheet" href="/solid-octo-succotash/lib/fontawesome/fontawesome.min.css"><link rel="stylesheet" href="/solid-octo-succotash/css/arknights.css"><script>if (window.localStorage.getItem('theme-mode') === 'light') document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark') document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/solid-octo-succotash/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/solid-octo-succotash/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+@font-face {
+ font-family: 'Font Awesome 6 Brands';
+ src: local('Font Awesome 6 Brands'), url('/solid-octo-succotash/lib/fontawesome/fa-brands.woff2') format('woff2');
+}
+@font-face {
+ font-family: 'Font Awesome 6 Free';
+ src: local('Font Awesome 6 Free'), url('/solid-octo-succotash/lib/fontawesome/fa-regular.woff2') format('woff2');
+}</style><style>:root {
+  --dark-background: url('https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg');
+  --light-background: url('/solid-octo-succotash/img/bk.jpg');
+}</style><meta name="generator" content="Hexo 6.3.0"></head><body><div class="loading" style="opacity: 0"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><nav><div class="navBtn hide"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/solid-octo-succotash/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/solid-octo-succotash/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1></h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2023-05-19T13:09:28.740Z" id="date"> 2023-05-19</time></div></span><br><span>Last Update: <div class="control"><time datetime="2023-05-19T13:40:26.676Z" id="updated"> 2023-05-19</time></div></span></div></div><hr><div id="post-content"><ol>
+<li><h3 id="Markdown语法的简单笔记以及LeetCode刷题1st"><a href="#Markdown语法的简单笔记以及LeetCode刷题1st" class="headerlink" title="Markdown语法的简单笔记以及LeetCode刷题1st"></a>Markdown语法的简单笔记以及LeetCode刷题1st</h3></li>
+<li><p>正文  # </p>
+</li>
+<li><p>换行，注意实际空一行，直接敲回车不能换行  </p>
+</li>
+<li><p>代码块使用&#96;&#96;&#96;+编程语言</p>
+</li>
+<li><p>正文中的代码 <code>hello world</code> 直接用&#96;&#96;括住</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//给定整数 n ，返回 所有小于非负整数 n 的质数的数量</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">demo1</span> &#123;</span><br><span class="line">    <span class="comment">//定义一个使用筛法的计算小于n的质数数量的函数</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">countPrimes</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="comment">//初始化计数器为0</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">count</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="comment">//创建一个布尔数组，用于标记是否为质数</span></span><br><span class="line">        <span class="type">boolean</span>[] prime = <span class="keyword">new</span> <span class="title class_">boolean</span>[n];</span><br><span class="line">        <span class="comment">//将数组中所有元素设为true</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">2</span>; i &lt; n; i++) &#123;</span><br><span class="line">            prime[i] = <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//遍历从2到n-1的所有整数，如果是质数，就将其倍数设为false</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">2</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (prime[i]) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> i + i; j &lt; n; j += i) &#123;</span><br><span class="line">                    prime[j] = <span class="literal">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//遍历数组，统计true的个数，即质数的个数</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (prime[i]) &#123;</span><br><span class="line">                count++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//返回计数器的值</span></span><br><span class="line">        <span class="keyword">return</span> count;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>有序列表 数字+句点然后空格，可缩进</p>
+</li>
+<li><p>123</p>
+</li>
+<li><p>123</p>
+</li>
+<li><p>123</p>
+<ol>
+<li>123<ol>
+<li>123<ol>
+<li>123</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>无序列表，输入-，然后空格</p>
+<ul>
+<li>123<ul>
+<li>123<ul>
+<li>123</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>加粗，倾斜<br><strong>加粗</strong>  使用两个<em>前后括住<br><em>倾斜</em>       一个</em><br><em><strong>加粗倾斜</strong></em>  三个前后括住</p>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/solid-octo-succotash/2023/05/19/My-New-Blog-Post/">← Next </a></div><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/solid-octo-succotash/2023/05/19/hello-world/">Hello World Prev →</a></div></div></div></div><div class="bottom-btn"><div><a id="to-top" onClick="scrolls.scrolltop();" title="To Top" style="opacity: 0; display: none;">∧</a><a id="to-index" href="#toc-div" title="To Catalog">≡</a><a id="color-mode" onClick="colorMode.change()" title="Change Theme"></a></div></div></article><aside><div id="about"><a href="/solid-octo-succotash/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">John Doe</a></h1><div id="description"><p></p></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0%E4%BB%A5%E5%8F%8ALeetCode%E5%88%B7%E9%A2%981st"><span class="toc-number">1.</span> <span class="toc-text">Markdown语法的简单笔记以及LeetCode刷题1st</span></a></li></ol></div></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr>by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/solid-octo-succotash/js/search.js"></script><script src="/solid-octo-succotash/js/arknights.js"></script><script src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/solid-octo-succotash/js/pjax.js"></script><script class="pjax-js">reset= () => {code.findCode();
+document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script></body></html>
