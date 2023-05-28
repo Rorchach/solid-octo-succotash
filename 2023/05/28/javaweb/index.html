@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="zh-CN" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>手工创建SpringBoot项目 | 墨迹</title><link rel="icon" type="image/x-icon" href="/solid-octo-succotash/favicon.ico"><script>var config = {"root":"/solid-octo-succotash/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy","copyFinish":"copied","expand":"expand"}}</script><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/solid-octo-succotash/lib/fontawesome/brands.min.css"><link type="text/css" rel="stylesheet" href="/solid-octo-succotash/lib/fontawesome/fontawesome.min.css"><link rel="stylesheet" href="/solid-octo-succotash/css/arknights.css"><script>if (window.localStorage.getItem('theme-mode') === 'light') document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark') document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/solid-octo-succotash/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/solid-octo-succotash/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+@font-face {
+ font-family: 'Font Awesome 6 Brands';
+ src: local('Font Awesome 6 Brands'), url('/solid-octo-succotash/lib/fontawesome/fa-brands.woff2') format('woff2');
+}
+@font-face {
+ font-family: 'Font Awesome 6 Free';
+ src: local('Font Awesome 6 Free'), url('/solid-octo-succotash/lib/fontawesome/fa-regular.woff2') format('woff2');
+}</style><style>:root {
+  --dark-background: url('https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg');
+  --light-background: url('/solid-octo-succotash/img/bk.jpg');
+}</style><meta name="generator" content="Hexo 6.3.0"></head><body><div class="loading" style="opacity: 0"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><nav><div class="navBtn hide"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/solid-octo-succotash/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/solid-octo-succotash/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>手工创建SpringBoot项目</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2023-05-28T13:21:30.162Z" id="date"> 2023-05-28</time></div></span><br><span>Last Update: <div class="control"><time datetime="2023-05-28T13:54:03.185Z" id="updated"> 2023-05-28</time></div></span></div></div><hr><div id="post-content"><hr>
+<h2 id="步骤："><a href="#步骤：" class="headerlink" title="步骤：   "></a>步骤：   </h2><p>1.创建普通Maven工程<br>2.继承spring-boot-starter-parent<br>3.添加依赖spring-boot-starter-web<br>4.制作引导类Application</p>
+<hr>
+<h2 id="File-types-隐藏文件"><a href="#File-types-隐藏文件" class="headerlink" title="File types 隐藏文件   "></a>File types 隐藏文件   </h2><p>Idea中隐藏指定文件或指定类型文件<br>Setting - &gt;File Types -&gt; Ignore Files and Folders<br>输入要隐藏的文件名，支持*号通配符<br>回车确认添加</p>
+<hr>
+<h2 id="parent："><a href="#parent：" class="headerlink" title="parent："></a>parent：</h2><p>1.开发SpringBoot程序要继承spring-boot-starter-parent<br>2.spring-boot-starter-parent中定义了若干个依赖管理<br>3.继承parent模块可以避免多个依赖使用相同的技术时出现依赖版本冲突<br>4.继承parent的形式也可以采用引入依赖的形式实现效果</p>
+<hr>
+<h2 id="starter"><a href="#starter" class="headerlink" title="starter:  "></a>starter:  </h2><p>springboot中常见项目名称，定义了当前项目使用的所有依赖坐标，已达到减少依赖配置的目的(简单来说就是starter使用的parent)</p>
+<p>parent：所有SpringBoot项目要继承的项目，定义了若干个坐标版本号（依赖管理，而非依赖），已达到减少依赖冲突的目的<br>Spring-boot-starter-parent各版本间存在着诸多坐标版本不同</p>
+<p>实际开发：使用任意坐标时，仅书写GAV中的G和V，V由SpringBoot提供，除非SpringBoot未提供对应版本V<br>如发生坐标错误，再指定Version（要小心版本冲突）</p>
+<p>正因为有starter引入依赖坐标，使得springboot更加遍历：starter就是一个定义了若干依赖坐标的pom管理文件</p>
+<hr>
+<h2 id="项目启动方式：引导类"><a href="#项目启动方式：引导类" class="headerlink" title="项目启动方式：引导类 "></a>项目启动方式：引导类 </h2><p>SpringBoot的引导类是Boot工程的执行入口，运行main方法就可以启动项目<br>SpringBoot工程运行后初始化Spring容器，扫描引导类所在包加载bean</p>
+<hr>
+<h2 id="设计编程"><a href="#设计编程" class="headerlink" title="设计编程:"></a>设计编程:</h2><p>简单来说，使用通用接口编程，而不要使用实现类编程 </p>
+<hr>
+<h2 id="内嵌tomcat服务器"><a href="#内嵌tomcat服务器" class="headerlink" title="内嵌tomcat服务器"></a>内嵌tomcat服务器</h2><p>1.内嵌tomcat服务器是SpringBoot辅助功能之一<br>2.工作原理：将tomcat服务器作为对象运行，并将对象交给Spring容器管理.<br>3.变更内嵌服务器是去除现有服务器，添加全新服务器</p>
+<hr>
+<h2 id="内置服务器"><a href="#内置服务器" class="headerlink" title="内置服务器"></a>内置服务器</h2><p>tomcat(默认): apache出品，粉丝多，应用面广<br>jetty:  更轻量级，负载性能远不及tomcat<br>undertow：负载性能勉强跑赢tomcat</p>
+<hr>
+<h2 id="REST风格（Representational-State-Transfer）表现形式状态转换"><a href="#REST风格（Representational-State-Transfer）表现形式状态转换" class="headerlink" title="REST风格（Representational State Transfer）表现形式状态转换"></a>REST风格（Representational State Transfer）表现形式状态转换</h2><p>REST（Representational State Transfer）是一种设计风格和架构原则，用于构建分布式网络应用程序。它是一种简化和标准化的通信协议，基于HTTP协议，并借用了Web的基本特性。<br>根据REST风格对于资源进行访问称为RESTful</p>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages" style="justify-content: flex-end"><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/solid-octo-succotash/2023/05/27/%E8%A7%84%E5%88%92/">最近规划 Prev →</a></div></div></div></div><div class="bottom-btn"><div><a id="to-top" onClick="scrolls.scrolltop();" title="To Top" style="opacity: 0; display: none;">∧</a><a id="to-index" href="#toc-div" title="To Catalog">≡</a><a id="color-mode" onClick="colorMode.change()" title="Change Theme"></a></div></div></article><aside><div id="about"><a href="/solid-octo-succotash/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">Rorchach</a></h1><div id="description"><p>this is my blog1</p></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">步骤：   </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#File-types-%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text">File types 隐藏文件   </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#parent%EF%BC%9A"><span class="toc-number">3.</span> <span class="toc-text">parent：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#starter"><span class="toc-number">4.</span> <span class="toc-text">starter:  </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%96%B9%E5%BC%8F%EF%BC%9A%E5%BC%95%E5%AF%BC%E7%B1%BB"><span class="toc-number">5.</span> <span class="toc-text">项目启动方式：引导类 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E7%BC%96%E7%A8%8B"><span class="toc-number">6.</span> <span class="toc-text">设计编程:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%B5%8Ctomcat%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-number">7.</span> <span class="toc-text">内嵌tomcat服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-number">8.</span> <span class="toc-text">内置服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#REST%E9%A3%8E%E6%A0%BC%EF%BC%88Representational-State-Transfer%EF%BC%89%E8%A1%A8%E7%8E%B0%E5%BD%A2%E5%BC%8F%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2"><span class="toc-number">9.</span> <span class="toc-text">REST风格（Representational State Transfer）表现形式状态转换</span></a></li></ol></div></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr>by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/solid-octo-succotash/js/search.js"></script><script src="/solid-octo-succotash/js/arknights.js"></script><script src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/solid-octo-succotash/js/pjax.js"></script><script class="pjax-js">reset= () => {code.findCode();
+document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script></body></html>
