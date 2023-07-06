@@ -17,8 +17,7 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 }</style><style>:root {
   --dark-background: url('https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg');
   --light-background: url('/solid-octo-succotash/img/bk.jpg');
-}</style><meta name="generator" content="Hexo 6.3.0"></head><body><div class="loading" style="opacity: 0"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><nav><div class="navBtn hide"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/solid-octo-succotash/"><span class="navItemTitle">Home</span></a></li><li class="navItem"><a class="navBlock" href="/solid-octo-succotash/about/"><span class="navItemTitle">About</span></a></li><li class="navItem"><a class="navBlock" href="/solid-octo-succotash/contact/"><span class="navItemTitle">Contact</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/solid-octo-succotash/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>SpringBoot</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2023-07-06T07:48:33.005Z" id="date"> 2023-07-06</time></div></span><br><span>Last Update: <div class="control"><time datetime="2023-07-06T07:55:52.276Z" id="updated"> 2023-07-06</time></div></span></div></div><hr><div id="post-content"><h1 id="SpringBoot基础篇"><a href="#SpringBoot基础篇" class="headerlink" title="SpringBoot基础篇"></a>SpringBoot基础篇</h1><p>​		在基础篇中，我给学习者的定位是先上手，能够使用SpringBoot搭建基于SpringBoot的web项目开发，所以内容设置较少，主要包含如下内容：</p>
-<ul>
+}</style><meta name="generator" content="Hexo 6.3.0"></head><body><div class="loading" style="opacity: 0"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><nav><div class="navBtn hide"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/solid-octo-succotash/"><span class="navItemTitle">Home</span></a></li><li class="navItem"><a class="navBlock" href="/solid-octo-succotash/about/"><span class="navItemTitle">About</span></a></li><li class="navItem"><a class="navBlock" href="/solid-octo-succotash/contact/"><span class="navItemTitle">Contact</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/solid-octo-succotash/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>SpringBoot</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2023-07-06T07:48:33.005Z" id="date"> 2023-07-06</time></div></span><br><span>Last Update: <div class="control"><time datetime="2023-07-06T13:00:13.017Z" id="updated"> 2023-07-06</time></div></span></div></div><hr><div id="post-content"><h1 id="SpringBoot基础篇"><a href="#SpringBoot基础篇" class="headerlink" title="SpringBoot基础篇"></a>SpringBoot基础篇</h1><ul>
 <li>SpringBoot快速入门</li>
 <li>SpringBoot基础配置</li>
 <li>基于SpringBoot整合SSMP</li>
@@ -38,12 +37,10 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <p>​		如果对Spring程序的基础开发不太懂的小伙伴，看到这里可以弃坑了，下面的内容学习需要具备Spring技术的知识，硬着头皮学不下去的。</p>
 <h3 id="JC-1-1-SpringBoot入门程序制作（一）"><a href="#JC-1-1-SpringBoot入门程序制作（一）" class="headerlink" title="JC-1-1.SpringBoot入门程序制作（一）"></a>JC-1-1.SpringBoot入门程序制作（一）</h3><p>​		下面让我们开始做第一个SpringBoot程序吧，本课程基于Idea2020.3版本制作，使用的Maven版本为3.6.1，JDK版本为1.8。如果你的环境和上述环境不同，可能在操作界面和操作过程中略有不同，只要软件匹配兼容即可（说到这个Idea和Maven，它们两个还真不是什么版本都能搭到一起的，说多了都是泪啊）。</p>
 <p>​		下面使用SpringBoot技术快速构建一个SpringMVC的程序，通过这个过程体会<font color="#ff0000"><b>简化</b></font>二字的含义。</p>
-<p><strong>步骤①</strong>：创建新模块，选择Spring Initializr，并配置模块相关基础信息</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211116125259385.png'><img src="/solid-octo-succotash/img%5Cimage-20211116125259385.png" alt="image-20211116125259385"></p>
+<p><strong>步骤①</strong>：创建新模块，选择Spring Initializr，并配置模块相关基础信息<br class='item-img' data-src='img\image-20211116125259385.png'><img src="img\image-20211116125259385.png"></p>
 <p>​		<font color="#ff0000"><b>特别关注</b></font>：第3步点击Next时，Idea需要联网状态才可以进入到后面那一页，如果不能正常联网，就无法正确到达右面那个设置页了，会一直<font color="#ff0000"><b>联网</b></font>转转转。</p>
 <p>​		<font color="#ff0000"><b>特别关注</b></font>：第5步选择java版本和你计算机上安装的JDK版本匹配即可，但是最低要求为JDK8或以上版本，推荐使用8或11。</p>
-<p><strong>步骤②</strong>：选择当前模块需要使用的技术集</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211116125615728.png'><img src="/solid-octo-succotash/img%5Cimage-20211116125615728.png" alt="image-20211116125615728"></p>
+<p><strong>步骤②</strong>：选择当前模块需要使用的技术集<br class='item-img' data-src='img\image-20211116125615728.png'><img src="img\image-20211116125615728.png"></p>
 <p>​		按照要求，左侧选择web，然后在中间选择Spring Web即可，选完右侧就出现了新的内容项，这就表示勾选成功了。</p>
 <p>​		<font color="#ff0000"><b>关注</b></font>：此处选择的SpringBoot的版本使用默认的就可以了，需要说一点，SpringBoot的版本升级速度很快，可能昨天创建工程的时候默认版本是2.5.4，今天再创建工程默认版本就变成2.5.5了，差别不大，无需过于纠结，并且还可以到配置文件中修改对应的版本。</p>
 <p><strong>步骤③</strong>：开发控制器类</p>
@@ -51,8 +48,7 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 
 <p>​		入门案例制作的SpringMVC的控制器基于Rest风格开发，当然此处使用原始格式制作SpringMVC的程序也是没有问题的，上例中的@RestController与@GetMapping注解是基于Restful开发的典型注解。</p>
 <p>​		<font color="#ff0000"><b>关注</b></font>：做到这里SpringBoot程序的最基础的开发已经做完了，现在就可以正常的运行Spring程序了。可能有些小伙伴会有疑惑，Tomcat服务器没有配置，Spring也没有配置，什么都没有配置这就能用吗？这就是SpringBoot技术的强大之处。关于内部工作流程后面再说，先专心学习开发过程。</p>
-<p><strong>步骤④</strong>：运行自动生成的Application类</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211116130152452.png'><img src="/solid-octo-succotash/img%5Cimage-20211116130152452.png" alt="image-20211116130152452"></p>
+<p><strong>步骤④</strong>：运行自动生成的Application类<br class='item-img' data-src='img\image-20211116130152452.png'><img src="img\image-20211116130152452.png"></p>
 <p>​		使用带main方法的java程序的运行形式来运行程序，运行完毕后，控制台输出上述信息。</p>
 <p>​		不难看出，运行的信息中包含了8080的端口，Tomcat这种熟悉的字样，难道这里启动了Tomcat服务器？是的，这里已经启动了。那服务器没有配置，哪里来的呢？后面再说。现在你就可以通过浏览器访问请求的路径，测试功能是否工作正常了。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">访问路径：	http:<span class="comment">//localhost:8080/books</span></span><br></pre></td></tr></table></figure>
@@ -119,10 +115,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 
 <p><strong>步骤②</strong>：右侧的<strong>ADD DEPENDENCIES</strong>用于选择使用何种技术，和之前勾选的Spring WEB是在做同一件事，仅仅是界面不同而已，点击后打开网页版的技术选择界面。</p class='item-img' data-src='img\image-20211122161257361.png'><img src="img\image-20211122161257361.png" alt="image-20211122161257361" style="zoom:50%;" />
 
-<p><strong>步骤③</strong>：所有信息设置完毕后，点击下面左侧<strong>GENERATE</strong>按钮，生成一个文件包。</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-202111221615480212.png'><img src="/solid-octo-succotash/img%5Cimage-202111221615480212.png" alt="image-20211122161548022"></p>
-<p><strong>步骤④</strong>：保存后得到一个压缩文件，这个文件就是创建的SpringBoot工程		</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211122161709478.png'><img src="/solid-octo-succotash/img%5Cimage-20211122161709478.png" alt="image-20211122161709478"></p>
+<p><strong>步骤③</strong>：所有信息设置完毕后，点击下面左侧<strong>GENERATE</strong>按钮，生成一个文件包。<br class='item-img' data-src='img\image-20211116125259385.png'><img src="img\image-20211116125259385.png"></p>
+<p><strong>步骤④</strong>：保存后得到一个压缩文件，这个文件就是创建的SpringBoot工程		<br class='item-img' data-src='img\image-20211122161709478.png'><img src="img\image-20211122161709478.png"></p>
 <p><strong>步骤⑤</strong>：解压缩此文件得到工程目录，在Idea中导入即可直接使用，和之前在Idea环境下根据向导创建的工程完全一样，你可以创建一个Controller测试一下当前工程是否可用。</p>
 <p><font color="#f0f"><b>温馨提示</b></font></p>
 <p>​		做到这里其实可以透漏一个小秘密，Idea工具中创建SpringBoot工程其实连接的就是SpringBoot的官网，还句话说这种方式和第一种方式是一模一样的，只不过Idea把界面给整合了一下，读取Spring官网信息，然后展示到Idea界面中而已，可以通过如下信息比对一下</p>
@@ -138,18 +132,18 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <li><p>创建工程。</p class='item-img' data-src='img\image-20211122150608039.png'><img src="img\image-20211122150608039.png" alt="image-20211122150608039"  />
 </li>
 <li><p>保存项目文件。</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211122161548022.png'><img src="/solid-octo-succotash/img%5Cimage-20211122161548022.png" alt="image-20211122161548022"></p>
 </li>
-<li><p>解压项目，通过IDE导入项目后进行编辑使用。</p>
-</li>
+</ol class='item-img' data-src='img\image-20211122161548022.png'><img src="img\image-20211122161548022.png">
+
+<ol start="4">
+<li>解压项目，通过IDE导入项目后进行编辑使用。</li>
 </ol>
 <p><strong>思考</strong></p>
 <p>​		现在创建工程靠的是访问国外的Spring主站，但是互联网信息的访问是可以被约束的，如果一天这个网站你在国内无法访问了，那前面这两种方式就无法创建SpringBoot工程了，这时候又该怎么解决这个问题呢？咱们下一节再说。</p>
 <h3 id="JC-1-3-SpringBoot入门程序制作（三）"><a href="#JC-1-3-SpringBoot入门程序制作（三）" class="headerlink" title="JC-1-3.SpringBoot入门程序制作（三）"></a>JC-1-3.SpringBoot入门程序制作（三）</h3><p>​		前面提到网站如果被限制访问了，该怎么办？开动脑筋想一想，不管是方式一还是方式二其实走的都是同一个路线，就是通过SpringBoot官网创建SpringBoot工程，假如国内有这么一个网站也能提供这样的功能，是不是就解决了呢？必然的嘛，新的问题又来了，国内有提供这样功能的网站吗？还真有，阿里提供了一个，下面问题就简单了，网址告诉我们就OK了，没错，就是这样。</p>
-<p>​		创建工程时，切换选择starter服务路径，然后手工输入阿里云地址即可，地址：<a target="_blank" rel="noopener" href="http://start.aliyun.com或https//start.aliyun.com">http://start.aliyun.com或https://start.aliyun.com</a></p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211122163605950.png'><img src="/solid-octo-succotash/img%5Cimage-20211122163605950.png" alt="image-20211122163605950"></p>
-<p>​		阿里为了便于自己公司开发使用，特此在依赖坐标中添加了一些阿里自主的技术，也是为了推广自己的技术吧，所以在依赖选择列表中，你有了更多的选择。此外，阿里提供的地址更符合国内开发者的使用习惯，里面有一些SpringBoot官网上没有给出的坐标，大家可以好好看一看。</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211122163937408.png'><img src="/solid-octo-succotash/img%5Cimage-20211122163937408.png" alt="image-20211122163937408"></p>
+<p>​		创建工程时，切换选择starter服务路径，然后手工输入阿里云地址即可，地址：<a target="_blank" rel="noopener" href="http://start.aliyun.com或https//start.aliyun.com">http://start.aliyun.com或https://start.aliyun.com</a><br class='item-img' data-src='img\image-20211122163605950.png'><img src="img\image-20211122163605950.png"></p>
+<p>​		阿里为了便于自己公司开发使用，特此在依赖坐标中添加了一些阿里自主的技术，也是为了推广自己的技术吧，所以在依赖选择列表中，你有了更多的选择。此外，阿里提供的地址更符合国内开发者的使用习惯，里面有一些SpringBoot官网上没有给出的坐标，大家可以好好看一看。</p class='item-img' data-src='img\image-20211122163937408.png'><img src="img\image-20211122163937408.png">
+
 <p>​		不过有一点需要说清楚，阿里云地址默认创建的SpringBoot工程版本是<font color="#ff0000"><b>2.4.1</b></font>，所以如果你想更换其他的版本，创建项目后在pom文件中手工修改即可，别忘了刷新一下，加载新版本信息。</p>
 <p>​		<font color="#ff0000"><b>注意</b></font>：阿里云提供的工程创建地址初始化完毕后和使用SpringBoot官网创建出来的工程略有区别，主要是在配置文件的形式上有区别,这个信息在后面讲解SpringBoot程序的执行流程时给大家揭晓。</p>
 <p><strong>总结</strong></p>
@@ -418,8 +412,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <h2 id="JC-2-SpringBoot基础配置"><a href="#JC-2-SpringBoot基础配置" class="headerlink" title="JC-2.SpringBoot基础配置"></a>JC-2.SpringBoot基础配置</h2><p>​		入门案例做完了，下面就要研究SpringBoot的用法了。通过入门案例，各位小伙伴能够感知到一个信息，SpringBoot没有具体的功能，它是辅助加快Spring程序的开发效率的。我们发现，现在几乎不用做任何配置功能就有了，确实很好用。但是仔细想想，没有做配置意味着什么？意味着配置已经做好了，不用你自己写了。但是新的问题又来了，如果不想用已经写好的默认配置，该如何干预呢？这就是这一章咱们要研究的问题。</p>
 <p>​		如果想修改默认的配置，这个信息应该写在什么位置呢？目前我们接触的入门案例中一共有3个文件，第一是pom.xml文件，设置项目的依赖，这个没什么好研究的，相关的高级内容咱们到原理篇再说，第二是引导类，这个是执行SpringBoot程序的入口，也不像是做功能配置的地方，其实还有一个信息，就是在resources目录下面有一个空白的文件，叫做application.properties。一看就是个配置文件，咱们这一章就来说说配置文件怎么写，能写什么，怎么覆盖SpringBoot的默认配置修改成自己的配置。</p>
 <p>​	</p>
-<h3 id="JC-2-1-属性配置"><a href="#JC-2-1-属性配置" class="headerlink" title="JC-2-1.属性配置"></a>JC-2-1.属性配置</h3><p>​		SpringBoot通过配置文件application.properties就可以修改默认的配置，那咱们就先找个简单的配置下手，当前访问tomcat的默认端口是8080，好熟悉的味道，但是不便于书写，我们先改成80，通过这个操作来熟悉一下SpringBoot的配置格式是什么样的。</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211123165428245.png'><img src="/solid-octo-succotash/img%5Cimage-20211123165428245.png" alt="image-20211123165428245"></p>
+<h3 id="JC-2-1-属性配置"><a href="#JC-2-1-属性配置" class="headerlink" title="JC-2-1.属性配置"></a>JC-2-1.属性配置</h3><p>​		SpringBoot通过配置文件application.properties就可以修改默认的配置，那咱们就先找个简单的配置下手，当前访问tomcat的默认端口是8080，好熟悉的味道，但是不便于书写，我们先改成80，通过这个操作来熟悉一下SpringBoot的配置格式是什么样的。</p class='item-img' data-src='img\image-20211123165428245.png'><img src="img\image-20211123165428245.png">
+
 <p>​		那该如何写呢？properties格式的文件书写规范是key&#x3D;value</p>
 <figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name</span>=<span class="string">itheima</span></span><br></pre></td></tr></table></figure>
 
@@ -545,16 +539,18 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <p>这里我们主要解决第一个现象，第二种现象到原理篇再讲解。第一种现象的解决方式如下：</p>
 </li>
 </ol>
-<p><strong>步骤①</strong>：打开设置，【Files】→【Project Structure…】</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211126160548690.png'><img src="/solid-octo-succotash/img%5Cimage-20211126160548690.png" alt="image-20211126160548690"></p>
+<p><strong>步骤①</strong>：打开设置，【Files】→【Project Structure…】</p class='item-img' data-src='img\image-20211126160548690.png'><img src="img\image-20211126160548690.png">
+
 <p><strong>步骤②</strong>：在弹出窗口中左侧选择【Facets】，右侧选中Spring路径下对应的模块名称，也就是你自动提示功能消失的那个模块</p>
-<p class='item-img' data-src='img\image-20211126160726589.png'><img src="img\image-20211126160726589.png" alt="image-20211126160726589" style="zoom:67%;" /><img src="/solid-octo-succotash/img%5Cimage-20211126160844372.png" alt="image-20211126160844372"></p>
+<p class='item-img' data-src='img\image-20211126160726589.png'><img src="img\image-20211126160726589.png" alt="image-20211126160726589" style="zoom:67%;" /><img src="img\image-20211126160844372.png"></p>
 <p><strong>步骤③</strong>：点击Customize Spring Boot按钮，此时可以看到当前模块对应的配置文件是哪些了。如果没有你想要称为配置文件的文件格式，就有可能无法弹出提示</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211126160946448.png'><img src="/solid-octo-succotash/img%5Cimage-20211126160946448.png" alt="image-20211126160946448"><img src="img\image-20211126160954338.png" alt="image-20211126160954338" style="zoom:80%;" /></p>
+<p class='item-img' data-src='img\image-20211126160946448.png'><img src="img\image-20211126160946448.png"><img src="img\image-20211126160954338.png" alt="image-20211126160954338" style="zoom:80%;" /></p>
 <p><strong>步骤④</strong>：选择添加配置文件，然后选中要作为配置文件的具体文件就OK了</p>
 <p class='item-img' data-src='img\image-20211126161145082.png'><img src="img\image-20211126161145082.png" alt="image-20211126161145082" style="zoom:80%;" /><img src="img\image-20211126161156324.png" alt="image-20211126161156324" style="zoom: 67%;" /></p>
-<p>​		到这里就做完了，其实就是Idea的一个小功能</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211126161301699.png'><img src="/solid-octo-succotash/img%5Cimage-20211126161301699.png" alt="image-20211126161301699"></p>
+<p>​		到这里就做完了，其实就是Idea的一个小功能</p class='item-img' data-src='img\image-20211126161301699.png'><img src="img\image-20211126161301699.png">
+
+
+
 <p><strong>总结</strong></p>
 <ol>
 <li><p>指定SpringBoot配置文件</p>
@@ -708,10 +704,10 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <p>上述格式基本上是最简格式了，要写的东西还真不少。下面看看SpringBoot整合MyBaits格式</p>
 </li>
 </ul>
-<p><strong>步骤①</strong>：创建模块</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211129092156020.png'><img src="/solid-octo-succotash/img%5Cimage-20211129092156020.png" alt="image-20211129092156020"></p>
-<p><strong>步骤②</strong>：勾选要使用的技术，MyBatis，由于要操作数据库，还要勾选对应数据库</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211129092210993.png'><img src="/solid-octo-succotash/img%5Cimage-20211129092210993.png" alt="image-20211129092210993"></p>
+<p><strong>步骤①</strong>：创建模块</p class='item-img' data-src='img\image-20211129092156020.png'><img src="img\image-20211129092156020.png">
+
+<p><strong>步骤②</strong>：勾选要使用的技术，MyBatis，由于要操作数据库，还要勾选对应数据库</p class='item-img' data-src='img\image-20211129092210993.png'><img src="img\image-20211129092210993.png">
+
 <p>​	或者手工导入对应技术的starter，和对应数据库的坐标</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--1.导入对应的starter--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.mybatis.spring.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">scope</span>&gt;</span>runtime<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -863,18 +859,19 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 </ol>
 <h3 id="JC-3-5-SSMP整合综合案例"><a href="#JC-3-5-SSMP整合综合案例" class="headerlink" title="JC-3-5.SSMP整合综合案例"></a>JC-3-5.SSMP整合综合案例</h3><p>​		SpringBoot能够整合的技术太多太多了，对于初学者来说慢慢来，一点点掌握。前面咱们做了4个整合了，下面就通过一个稍微综合一点的案例，将所有知识贯穿起来，同时做一个小功能，体会一下。不过有言在先，这个案例制作的时候，你可能会有这种感觉，说好的SpringBoot整合其他技术的案例，为什么感觉SpringBoot整合其他技术的身影不多呢？因为这东西书写太简单了，简单到瞬间写完，大量的时间做的不是这些整合工作。</p>
 <p>​		先看一下这个案例的最终效果</p>
-<p><strong>主页面</strong></p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211129113447844.png'><img src="/solid-octo-succotash/img%5Cimage-20211129113447844.png" alt="image-20211129113447844"></p>
-<p><strong>添加</strong></p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211129113522459.png'><img src="/solid-octo-succotash/img%5Cimage-20211129113522459.png" alt="image-20211129113522459"></p>
-<p><strong>删除</strong></p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211129113550829.png'><img src="/solid-octo-succotash/img%5Cimage-20211129113550829.png" alt="image-20211129113550829"></p>
-<p><strong>修改</strong></p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211129113610966.png'><img src="/solid-octo-succotash/img%5Cimage-20211129113610966.png" alt="image-20211129113610966"></p>
-<p><strong>分页</strong></p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211129113628969.png'><img src="/solid-octo-succotash/img%5Cimage-20211129113628969.png" alt="image-20211129113628969"></p>
-<p><strong>条件查询</strong></p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211129113650369.png'><img src="/solid-octo-succotash/img%5Cimage-20211129113650369.png" alt="image-20211129113650369"></p>
+<p><strong>主页面</strong></p class='item-img' data-src='img\image-20211126161301699.png'><img src="img\image-20211126161301699.png">
+
+<p><strong>添加</strong></p class='item-img' data-src='img\image-20211129113522459.png'><img src="img\image-20211129113522459.png">
+
+<p><strong>删除</strong></p class='item-img' data-src='img\image-20211129113550829.png'><img src="img\image-20211129113550829.png">
+
+<p><strong>修改</strong></p class='item-img' data-src='img\image-20211129113610966.png'><img src="img\image-20211129113610966.png">
+
+<p><strong>分页</strong></p class='item-img' data-src='img\image-20211129113628969.png'><img src="img\image-20211129113628969.png">
+**条件查询**
+
+<img src="img\image-20211129113650369.png">
+
 <p>​	整体案例中需要采用的技术如下，先了解一下，做到哪一个说哪一个</p>
 <ol>
 <li>实体类开发————使用Lombok快速制作实体类</li>
@@ -1078,12 +1075,12 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping(&quot;/books&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">BookController2</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> IBookService bookService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping</span></span><br><span class="line">    <span class="keyword">public</span> List&lt;Book&gt; <span class="title function_">getAll</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> bookService.list();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@PostMapping</span></span><br><span class="line">    <span class="keyword">public</span> Boolean <span class="title function_">save</span><span class="params">(<span class="meta">@RequestBody</span> Book book)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> bookService.save(book);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@PutMapping</span></span><br><span class="line">    <span class="keyword">public</span> Boolean <span class="title function_">update</span><span class="params">(<span class="meta">@RequestBody</span> Book book)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> bookService.modify(book);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@DeleteMapping(&quot;&#123;id&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> Boolean <span class="title function_">delete</span><span class="params">(<span class="meta">@PathVariable</span> Integer id)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> bookService.delete(id);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;&#123;id&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> Book <span class="title function_">getById</span><span class="params">(<span class="meta">@PathVariable</span> Integer id)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> bookService.getById(id);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;&#123;currentPage&#125;/&#123;pageSize&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> IPage&lt;Book&gt; <span class="title function_">getPage</span><span class="params">(<span class="meta">@PathVariable</span> <span class="type">int</span> currentPage,<span class="meta">@PathVariable</span> <span class="type">int</span> pageSize)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> bookService.getPage(currentPage,pageSize, <span class="literal">null</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>​		在使用Postman测试时关注提交类型，对应上即可，不然就会报405的错误码了。</p>
-<p><strong>普通GET请求</strong></p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211129152237371.png'><img src="/solid-octo-succotash/img%5Cimage-20211129152237371.png" alt="image-20211129152237371"></p>
-<p><strong>PUT请求传递json数据，后台实用@RequestBody接收数据</strong></p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211129152300177.png'><img src="/solid-octo-succotash/img%5Cimage-20211129152300177.png" alt="image-20211129152300177"></p>
-<p><strong>GET请求传递路径变量，后台实用@PathVariable接收数据</strong></p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211129152320073.png'><img src="/solid-octo-succotash/img%5Cimage-20211129152320073.png" alt="image-20211129152320073"></p>
+<p><strong>普通GET请求</strong></p class='item-img' data-src='img\image-20211129152237371.png'><img src="img\image-20211129152237371.png">
+
+<p><strong>PUT请求传递json数据，后台实用@RequestBody接收数据</strong></p class='item-img' data-src='img\image-20211129152300177.png'><img src="img\image-20211129152300177.png">
+
+<p><strong>GET请求传递路径变量，后台实用@PathVariable接收数据</strong></p class='item-img' data-src='img\image-20211129152320073.png'><img src="img\image-20211129152320073.png">
+
 <p><strong>总结</strong></p>
 <ol>
 <li>基于Restful制作表现层接口<ul>
@@ -1429,7 +1426,7 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <h3 id="SpringBoot项目快速启动（Linux版）"><a href="#SpringBoot项目快速启动（Linux版）" class="headerlink" title="SpringBoot项目快速启动（Linux版）"></a>SpringBoot项目快速启动（Linux版）</h3><p>​		其实对于Linux系统下的程序运行与Windows系统下的程序运行差别不大，命令还是那组命令，只不过各位小伙伴可能对Linux指令不太熟悉，结果就会导致各种各样的问题发生。比如防火墙如何关闭，IP地址如何查询，JDK如何安装等等。这里不作为重点内容给大家普及了，了解一下整体过程就行了。</p>
 <h2 id="YW-2-配置高级"><a href="#YW-2-配置高级" class="headerlink" title="YW-2.配置高级"></a>YW-2.配置高级</h2><p>​		关于配置在基础篇讲过一部分，基础篇的配置总体上来说就是让各位小伙伴掌握配置的格式。比如配置文件如何写啊，写好的数据如何读取啊，都是基础的语法级知识。在实用篇中就要集中在配置的应用这个方面了，下面就开始配置高级相关内容的第一部分学习，为什么说第一部分，因为在开发实用篇中还有对应的配置高级知识要进行学习。</p>
 <h3 id="YW-2-1-临时属性设置"><a href="#YW-2-1-临时属性设置" class="headerlink" title="YW-2-1.临时属性设置"></a>YW-2-1.临时属性设置</h3><p>​		目前我们的程序包打好了，可以发布了。但是程序包打好以后，里面的配置都已经是固定的了，比如配置了服务器的端口是8080。如果我要启动项目，发现当前我的服务器上已经有应用启动起来并且占用了8080端口，这个时候就尴尬了。难道要重新把打包好的程序修改一下吗？比如我要把打包好的程序启动端口改成80。</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211206095113771.png'><img src="/solid-octo-succotash/img%5Cimage-20211206095113771.png" alt="image-20211206095113771">             <img src="/solid-octo-succotash/img%5Cimage-20211206095524343.png" alt="image-20211206095524343" class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211206095524343.png'><img src="/solid-octo-succotash/img%5Cimage-20211206095524343.png" alt="image-20211206095524343"></p>
+<p class='item-img' data-src='img\image-20211206095113771.png'><img src="img\image-20211206095113771.png">           <img src="img\image-20211206095524343.png" class='item-img' data-src='img\image-20211206095524343.png'><img src="img\image-20211206095524343.png"></p>
 <p>​		SpringBoot提供了灵活的配置方式，如果你发现你的项目中有个别属性需要重新配置，可以使用临时属性的方式快速修改某些配置。方法也特别简单，在启动的时候添加上对应参数就可以了。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java –jar springboot.jar –-server.port=<span class="number">80</span></span><br></pre></td></tr></table></figure>
 
@@ -1687,8 +1684,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <ol>
 <li>基于lombok提供的@Slf4j注解为类快速添加日志对象</li>
 </ol>
-<h4 id="YW-4-2-日志输出格式控制"><a href="#YW-4-2-日志输出格式控制" class="headerlink" title="YW-4-2.日志输出格式控制"></a>YW-4-2.日志输出格式控制</h4><p>​		日志已经能够记录了，但是目前记录的格式是SpringBoot给我们提供的，如果想自定义控制就需要自己设置了。先分析一下当前日志的记录格式。</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20211206123431222.png'><img src="/solid-octo-succotash/img%5Cimage-20211206123431222.png" alt="image-20211206123431222"></p>
+<h4 id="YW-4-2-日志输出格式控制"><a href="#YW-4-2-日志输出格式控制" class="headerlink" title="YW-4-2.日志输出格式控制"></a>YW-4-2.日志输出格式控制</h4><p>​		日志已经能够记录了，但是目前记录的格式是SpringBoot给我们提供的，如果想自定义控制就需要自己设置了。先分析一下当前日志的记录格式。</p class='item-img' data-src='img\image-20211206123431222.png'><img src="img\image-20211206123431222.png">
+
 <p>​		对于单条日志信息来说，日期，触发位置，记录信息是最核心的信息。级别用于做筛选过滤，PID与线程名用于做精准分析。了解这些信息后就可以DIY日志格式了。本课程不做详细的研究，有兴趣的小伙伴可以学习相关的知识。下面给出课程中模拟的官方日志模板的书写格式，便于大家学习。</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">logging:</span></span><br><span class="line">	<span class="attr">pattern:</span></span><br><span class="line">    	<span class="attr">console:</span> <span class="string">&quot;%d %clr(%p) --- [%16t] %clr(%-40.40c)&#123;cyan&#125; : %m %n&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -1737,8 +1734,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <h3 id="KF-1-1-手动启动热部署"><a href="#KF-1-1-手动启动热部署" class="headerlink" title="KF-1-1.手动启动热部署"></a>KF-1-1.手动启动热部署</h3><p><strong>步骤①</strong>：导入开发者工具对应的坐标</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-devtools<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">optional</span>&gt;</span>true<span class="tag">&lt;/<span class="name">optional</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><strong>步骤②</strong>：构建项目，可以使用快捷键激活此功能</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220222121257218.png'><img src="/solid-octo-succotash/img%5Cimage-20220222121257218.png" alt="image-20220222121257218"></p>
+<p><strong>步骤②</strong>：构建项目，可以使用快捷键激活此功能</p class='item-img' data-src='img\image-20220222121257218.png'><img src="img\image-20220222121257218.png">
+
 <p>​		对应的快捷键一定要记得</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;CTR&gt;L+&lt;F9&gt;</span><br></pre></td></tr></table></figure>
 
@@ -1760,12 +1757,12 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <p>​		</p>
 <h3 id="KF-1-2-自动启动热部署"><a href="#KF-1-2-自动启动热部署" class="headerlink" title="KF-1-2.自动启动热部署"></a>KF-1-2.自动启动热部署</h3><p>​		自动热部署其实就是设计一个开关，打开这个开关后，IDE工具就可以自动热部署。因此这个操作和IDE工具有关，以下以idea为例设置idea中启动热部署</p>
 <p><strong>步骤①</strong>：设置自动构建项目</p>
-<p>​		打开【File】，选择【settings…】,在面板左侧的菜单中找到【Compile】选项，然后勾选【Build project automatically】，意思是自动构建项目</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220222123543551.png'><img src="/solid-octo-succotash/img%5Cimage-20220222123543551.png" alt="image-20220222123543551"></p>
+<p>​		打开【File】，选择【settings…】,在面板左侧的菜单中找到【Compile】选项，然后勾选【Build project automatically】，意思是自动构建项目</p class='item-img' data-src='img\image-20220222123543551.png'><img src="img\image-20220222123543551.png">
+
 <p>​		自动构建项目选项勾选后</p>
 <p><strong>步骤②</strong>：允许在程序运行时进行自动构建</p>
-<p>​		使用快捷键【Ctrl】+【Alt】+【Shit】+【&#x2F;】打开维护面板，选择第1项【Registry…】</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220222124006910.png'><img src="/solid-octo-succotash/img%5Cimage-20220222124006910.png" alt="image-20220222124006910"></p>
+<p>​		使用快捷键【Ctrl】+【Alt】+【Shit】+【&#x2F;】打开维护面板，选择第1项【Registry…】</p class='item-img' data-src='img\image-20220222124006910.png'><img src="img\image-20220222124006910.png">
+
 <p>​		在选项中搜索comple，然后勾选对应项即可</p class='item-img' data-src='img\image-20220222124240069.png'><img src="img\image-20220222124240069.png" alt="image-20220222124240069" style="zoom:80%;" />
 
 <p>​		这样程序在运行的时候就可以进行自动构建了，实现了热部署的效果。</p>
@@ -1836,8 +1833,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@ConfigurationProperties(prefix = &quot;servers&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ServerConfig</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> String ipAddress;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> port;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">long</span> timeout;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>​		有人感觉这没区别啊？注意观察，现在绑定属性的ServerConfig类并没有声明@Component注解。当使用@EnableConfigurationProperties注解时，spring会默认将其标注的类定义为bean，因此无需再次声明@Component注解了。</p>
-<p>​		最后再说一个小技巧，使用@ConfigurationProperties注解时，会出现一个提示信息</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220222145535749.png'><img src="/solid-octo-succotash/img%5Cimage-20220222145535749.png" alt="image-20220222145535749"></p>
+<p>​		最后再说一个小技巧，使用@ConfigurationProperties注解时，会出现一个提示信息</p class='item-img' data-src='img\image-20220222145535749.png'><img src="img\image-20220222145535749.png">
+
 <p>​		出现这个提示后只需要添加一个坐标此提醒就消失了</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-configuration-processor<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -2273,10 +2270,10 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <p>​		快速了解一下MongoDB，下面直接开始我们的学习，老规矩，先安装，再操作，最后说整合</p>
 <h5 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h5><p>​		windows版安装包下载地址：<a target="_blank" rel="noopener" href="https://www.mongodb.com/try/download">https://www.mongodb.com/try/download</a></p>
 <p>​		下载的安装包也有两种形式，一种是一键安装的msi文件，还有一种是解压缩就能使用的zip文件，哪种形式都行，本课程采用解压缩zip文件进行安装。</p>
-<p>​		解压缩完毕后会得到如下文件，其中bin目录包含了所有mongodb的可执行命令</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220224111306933.png'><img src="/solid-octo-succotash/img%5Cimage-20220224111306933.png" alt="image-20220224111306933"></p>
-<p>​		mongodb在运行时需要指定一个数据存储的目录，所以创建一个数据存储目录，通常放置在安装目录中，此处创建data的目录用来存储数据，具体如下</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220224111053408.png'><img src="/solid-octo-succotash/img%5Cimage-20220224111053408.png" alt="image-20220224111053408"></p>
+<p>​		解压缩完毕后会得到如下文件，其中bin目录包含了所有mongodb的可执行命令</p class='item-img' data-src='img\image-20220224111306933.png'><img src="img\image-20220224111306933.png">
+
+<p>​		mongodb在运行时需要指定一个数据存储的目录，所以创建一个数据存储目录，通常放置在安装目录中，此处创建data的目录用来存储数据，具体如下</p class='item-img' data-src='img\image-20220224111053408.png'><img src="img\image-20220224111053408.png">
+
 <p>​		如果在安装的过程中出现了如下警告信息，就是告诉你，你当前的操作系统缺少了一些系统文件，这个不用担心。</p class='item-img' data-src='img\image-20220224113956882.png'><img src="img\image-20220224113956882.png" alt="image-20220224113956882" style="zoom:50%;" />
 
 <p>​		根据下列方案即可解决，在浏览器中搜索提示缺少的名称对应的文件，并下载，将下载的文件拷贝到windows安装目录的system32目录下，然后在命令行中执行regsvr32命令注册此文件。根据下载的文件名不同，执行命令前更改对应名称。</p>
@@ -2292,12 +2289,13 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <h5 id="基本操作-1"><a href="#基本操作-1" class="headerlink" title="基本操作"></a>基本操作</h5><p>​		MongoDB虽然是一款数据库，但是它的操作并不是使用SQL语句进行的，因此操作方式各位小伙伴可能比较陌生，好在有一些类似于Navicat的数据库客户端软件，能够便捷的操作MongoDB，先安装一个客户端，再来操作MongoDB。</p>
 <p>​		同类型的软件较多，本次安装的软件时Robo3t，Robot3t是一款绿色软件，无需安装，解压缩即可。解压缩完毕后进入安装目录双击robot3t.exe即可使用。</p class='item-img' data-src='img\image-20220224114911573.png'><img src="img\image-20220224114911573.png" alt="image-20220224114911573" style="zoom: 33%;" />
 
-<p>​		打开软件首先要连接MongoDB服务器，选择【File】菜单，选择【Connect…】</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220224115202422.png'><img src="/solid-octo-succotash/img%5Cimage-20220224115202422.png" alt="image-20220224115202422"></p>
-<p>​		进入连接管理界面后，选择左上角的【Create】链接，创建新的连接设置</p class='item-img' data-src='img\image-20220224115254200.png'><img src="img\image-20220224115254200.png" alt="image-20220224115254200" style="zoom:80%;" />
+<p>​		打开软件首先要连接MongoDB服务器，选择【File】菜单，选择【Connect…】</p class='item-img' data-src='img\image-20220224115202422.png'><img src="img\image-20220224115202422.png">
+​		进入连接管理界面后，选择左上角的【Create】链接，创建新的连接设置
 
-<p>​		如果输入设置值即可连接（默认不修改即可连接本机27017端口）</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220224115300266.png'><img src="/solid-octo-succotash/img%5Cimage-20220224115300266.png" alt="image-20220224115300266"></p>
+<img src="img\image-20220224115254200.png" alt="image-20220224115254200" style="zoom:80%;" />
+
+<p>​		如果输入设置值即可连接（默认不修改即可连接本机27017端口）</p class='item-img' data-src='img\image-20220224115300266.png'><img src="img\image-20220224115300266.png">
+
 <p>​		连接成功后在命令输入区域输入命令即可操作MongoDB。</p>
 <p>​		创建数据库：在左侧菜单中使用右键创建，输入数据库名称即可</p>
 <p>​		创建集合：在Collections上使用右键创建，输入集合名称即可，集合等同于数据库中的表的作用</p>
@@ -2395,8 +2393,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <p>​		上述过程中分词结果关键字内容每一个都不相同，作用有点类似于数据库中的索引，是用来加速数据查询的。但是数据库中的索引是对某一个字段进行添加索引，而这里的分词结果关键字不是一个完整的字段值，只是一个字段中的其中的一部分内容。并且索引使用时是根据索引内容查找整条数据，全文搜索中的分词结果关键字查询后得到的并不是整条的数据，而是数据的id，要想获得具体数据还要再次查询，因此这里为这种分词结果关键字起了一个全新的名称，叫做<strong>倒排索引</strong>。</p>
 <p>​		通过上述内容的学习，发现使用ES其实准备工作还是挺多的，必须先建立文档的倒排索引，然后才能继续使用。快速了解一下ES的工作原理，下面直接开始我们的学习，老规矩，先安装，再操作，最后说整合。</p>
 <h5 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h5><p>​		windows版安装包下载地址：<a target="_blank" rel="noopener" href="https://www.elastic.co/cn/downloads/elasticsearch">https:&#x2F;&#x2F;</a><a target="_blank" rel="noopener" href="https://www.elastic.co/cn/downloads/elasticsearch">www.elastic.co/cn/downloads/elasticsearch</a></p>
-<p>​		下载的安装包是解压缩就能使用的zip文件，解压缩完毕后会得到如下文件</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220225132756400.png'><img src="/solid-octo-succotash/img%5Cimage-20220225132756400.png" alt="image-20220225132756400"></p>
+<p>​		下载的安装包是解压缩就能使用的zip文件，解压缩完毕后会得到如下文件</p class='item-img' data-src='img\image-20220225132756400.png'><img src="img\image-20220225132756400.png">
+
 <ul>
 <li>bin目录：包含所有的可执行命令</li>
 <li>config目录：包含ES服务器使用的配置文件</li>
@@ -2622,8 +2620,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <p>​		按照之前的套路，其实变更缓存并不繁琐，但是springboot并没有支持使用memcached作为其缓存解决方案，也就是说在type属性中没有memcached的配置选项，这里就需要更变一下处理方式了。在整合之前先安装memcached。</p>
 <p><strong>安装</strong></p>
 <p>​		windows版安装包下载地址：<a target="_blank" rel="noopener" href="https://www.runoob.com/memcached/window-install-memcached.html">https://www.runoob.com/memcached/window-install-memcached.html</a></p>
-<p>​		下载的安装包是解压缩就能使用的zip文件，解压缩完毕后会得到如下文件</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220226174957040.png'><img src="/solid-octo-succotash/img%5Cimage-20220226174957040.png" alt="image-20220226174957040"></p>
+<p>​		下载的安装包是解压缩就能使用的zip文件，解压缩完毕后会得到如下文件</p class='item-img' data-src='img\image-20220226174957040.png'><img src="img\image-20220226174957040.png">
+
 <p>​		可执行文件只有一个memcached.exe，使用该文件可以将memcached作为系统服务启动，执行此文件时会出现报错信息，如下：</p class='item-img' data-src='img\image-20220226175141986.png'><img src="img\image-20220226175141986.png" alt="image-20220226175141986" style="zoom:80%;" />
 
 <p>​		此处出现问题的原因是注册系统服务时需要使用管理员权限，当前账号权限不足导致安装服务失败，切换管理员账号权限启动命令行</p class='item-img' data-src='img\image-20220226175302903.png'><img src="img\image-20220226175302903.png" alt="image-20220226175302903" style="zoom:80%;" />
@@ -2916,8 +2914,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 
 <p>​		java程序仅用于发送邮件，邮件的功能还是邮件供应商提供的，所以这里是用别人的邮件服务，要配置对应信息。</p>
 <p>​		host配置的是提供邮件服务的主机协议，当前程序仅用于发送邮件，因此配置的是smtp的协议。</p>
-<p>​		password并不是邮箱账号的登录密码，是邮件供应商提供的一个加密后的密码，也是为了保障系统安全性。不然外部人员通过地址访问下载了配置文件，直接获取到了邮件密码就会有极大的安全隐患。有关该密码的获取每个邮件供应商提供的方式都不一样，此处略过。可以到邮件供应商的设置页面找POP3或IMAP这些关键词找到对应的获取位置。下例仅供参考：</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220228111251036.png'><img src="/solid-octo-succotash/img%5Cimage-20220228111251036.png" alt="image-20220228111251036"></p>
+<p>​		password并不是邮箱账号的登录密码，是邮件供应商提供的一个加密后的密码，也是为了保障系统安全性。不然外部人员通过地址访问下载了配置文件，直接获取到了邮件密码就会有极大的安全隐患。有关该密码的获取每个邮件供应商提供的方式都不一样，此处略过。可以到邮件供应商的设置页面找POP3或IMAP这些关键词找到对应的获取位置。下例仅供参考：</p class='item-img' data-src='img\image-20220228111251036.png'><img src="img\image-20220228111251036.png">
+
 <p><strong>步骤③</strong>：使用JavaMailSender接口发送邮件</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Service</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SendMailServiceImpl</span> <span class="keyword">implements</span> <span class="title class_">SendMailService</span> &#123;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> JavaMailSender javaMailSender;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//发送人</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">String</span> <span class="variable">from</span> <span class="operator">=</span> <span class="string">&quot;test@qq.com&quot;</span>;</span><br><span class="line">    <span class="comment">//接收人</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">String</span> <span class="variable">to</span> <span class="operator">=</span> <span class="string">&quot;test@126.com&quot;</span>;</span><br><span class="line">    <span class="comment">//标题</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">String</span> <span class="variable">subject</span> <span class="operator">=</span> <span class="string">&quot;测试邮件&quot;</span>;</span><br><span class="line">    <span class="comment">//正文</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">String</span> <span class="variable">context</span> <span class="operator">=</span> <span class="string">&quot;测试邮件正文内容&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">sendMail</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">SimpleMailMessage</span> <span class="variable">message</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">SimpleMailMessage</span>();</span><br><span class="line">        message.setFrom(from+<span class="string">&quot;(小甜甜)&quot;</span>);</span><br><span class="line">        message.setTo(to);</span><br><span class="line">        message.setSubject(subject);</span><br><span class="line">        message.setText(context);</span><br><span class="line">        javaMailSender.send(message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -3024,8 +3022,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <p>​		下面开启springboot整合各种各样的消息中间件，从严格满足JMS规范的ActiveMQ开始</p>
 <h4 id="SpringBoot整合ActiveMQ"><a href="#SpringBoot整合ActiveMQ" class="headerlink" title="SpringBoot整合ActiveMQ"></a>SpringBoot整合ActiveMQ</h4><p>​		ActiveMQ是MQ产品中的元老级产品，早期标准MQ产品之一，在AMQP协议没有出现之前，占据了消息中间件市场的绝大部分份额，后期因为AMQP系列产品的出现，迅速走弱，目前仅在一些线上运行的产品中出现，新产品开发较少采用。</p>
 <h5 id="安装-3"><a href="#安装-3" class="headerlink" title="安装"></a>安装</h5><p>​		windows版安装包下载地址：<a target="_blank" rel="noopener" href="https://activemq.apache.org/components/classic/download/">https://activemq.apache.org/components/classic/download</a><a target="_blank" rel="noopener" href="https://activemq.apache.org/components/classic/download/">&#x2F;</a></p>
-<p>​		下载的安装包是解压缩就能使用的zip文件，解压缩完毕后会得到如下文件</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220228160001620.png'><img src="/solid-octo-succotash/img%5Cimage-20220228160001620.png" alt="image-20220228160001620"></p>
+<p>​		下载的安装包是解压缩就能使用的zip文件，解压缩完毕后会得到如下文件</p class='item-img' data-src='img\image-20220228160001620.png'><img src="img\image-20220228160001620.png">
+
 <p><strong>启动服务器</strong></p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">activemq.bat</span><br></pre></td></tr></table></figure>
 
@@ -3036,8 +3034,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 
 <p>​		web管理服务默认端口8161，访问后可以打开ActiveMQ的管理界面，如下：</p class='item-img' data-src='img\image-20220228160844972.png'><img src="img\image-20220228160844972.png" alt="image-20220228160844972" style="zoom:67%;" />
 
-<p>​		首先输入访问用户名和密码，初始化用户名和密码相同，均为：admin，成功登录后进入管理后台界面，如下：</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220228161010401.png'><img src="/solid-octo-succotash/img%5Cimage-20220228161010401.png" alt="image-20220228161010401"></p>
+<p>​		首先输入访问用户名和密码，初始化用户名和密码相同，均为：admin，成功登录后进入管理后台界面，如下：</p class='item-img' data-src='img\image-20220228161010401.png'><img src="img\image-20220228161010401.png">
+
 <p>​		看到上述界面视为启动ActiveMQ服务成功。</p>
 <p><strong>启动失败</strong></p>
 <p>​		在ActiveMQ启动时要占用多个端口，以下为正常启动信息：</p>
@@ -3078,8 +3076,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <p><strong>Erlang安装</strong></p>
 <p>​		windows版安装包下载地址：<a target="_blank" rel="noopener" href="https://www.erlang.org/downloads">https</a><a target="_blank" rel="noopener" href="https://www.erlang.org/downloads">:&#x2F;&#x2F;www.erlang.org/downloads</a></p>
 <p>​		下载完毕后得到exe安装文件，一键傻瓜式安装，安装完毕需要重启，需要重启，需要重启。</p>
-<p>​		安装的过程中可能会出现依赖Windows组件的提示，根据提示下载安装即可，都是自动执行的，如下：</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220228164851551.png'><img src="/solid-octo-succotash/img%5Cimage-20220228164851551.png" alt="image-20220228164851551"></p>
+<p>​		安装的过程中可能会出现依赖Windows组件的提示，根据提示下载安装即可，都是自动执行的，如下：</p class='item-img' data-src='img\image-20220228164851551.png'><img src="img\image-20220228164851551.png">
+
 <p>​		Erlang安装后需要配置环境变量，否则RabbitMQ将无法找到安装的Erlang。需要配置项如下，作用等同JDK配置环境变量的作用。</p>
 <ul>
 <li>ERLANG_HOME</li>
@@ -3103,10 +3101,10 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <p>​		启动插件后可以在插件运行状态中查看是否运行，运行后通过浏览器即可打开服务后台管理界面</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">http://<span class="title">localhost</span>:15672</span></span><br></pre></td></tr></table></figure>
 
-<p>​		web管理服务默认端口15672，访问后可以打开RabbitMQ的管理界面，如下：</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220228170504793.png'><img src="/solid-octo-succotash/img%5Cimage-20220228170504793.png" alt="image-20220228170504793"></p>
-<p>​		首先输入访问用户名和密码，初始化用户名和密码相同，均为：guest，成功登录后进入管理后台界面，如下：</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220228170535261.png'><img src="/solid-octo-succotash/img%5Cimage-20220228170535261.png" alt="image-20220228170535261"></p>
+<p>​		web管理服务默认端口15672，访问后可以打开RabbitMQ的管理界面，如下：</p class='item-img' data-src='img\image-20220228170504793.png'><img src="img\image-20220228170504793.png">
+
+<p>​		首先输入访问用户名和密码，初始化用户名和密码相同，均为：guest，成功登录后进入管理后台界面，如下：</p class='item-img' data-src='img\image-20220228170535261.png'><img src="img\image-20220228170535261.png">
+
 <h5 id="整合-direct模型"><a href="#整合-direct模型" class="headerlink" title="整合(direct模型)"></a>整合(direct模型)</h5><p>​		RabbitMQ满足AMQP协议，因此不同的消息模型对应的制作不同，先使用最简单的direct模型开发。</p>
 <p><strong>步骤①</strong>：导入springboot整合amqp的starter，amqp协议默认实现为rabbitmq方案</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-amqp<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -3194,8 +3192,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 </ol>
 <h4 id="SpringBoot整合RocketMQ"><a href="#SpringBoot整合RocketMQ" class="headerlink" title="SpringBoot整合RocketMQ"></a>SpringBoot整合RocketMQ</h4><p>​		RocketMQ由阿里研发，后捐赠给apache基金会，目前是apache基金会顶级项目之一，也是目前市面上的MQ产品中较为流行的产品之一，它遵从AMQP协议。</p>
 <h5 id="安装-5"><a href="#安装-5" class="headerlink" title="安装"></a>安装</h5><p>​		windows版安装包下载地址：<a target="_blank" rel="noopener" href="https://rocketmq.apache.org/">https://rocketmq.apache.org</a><a target="_blank" rel="noopener" href="https://rocketmq.apache.org/">&#x2F;</a></p>
-<p>​		下载完毕后得到zip压缩文件，解压缩即可使用，解压后得到如下文件</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220228174453471.png'><img src="/solid-octo-succotash/img%5Cimage-20220228174453471.png" alt="image-20220228174453471"></p>
+<p>​		下载完毕后得到zip压缩文件，解压缩即可使用，解压后得到如下文件</p class='item-img' data-src='img\image-20220228174453471.png'><img src="img\image-20220228174453471.png">
+
 <p>​		RocketMQ安装后需要配置环境变量，具体如下：</p>
 <ul>
 <li>ROCKETMQ_HOME</li>
@@ -3238,8 +3236,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <li>企业开发时通常使用监听器来处理消息队列中的消息，设置监听器使用注解@RocketMQMessageListener</li>
 </ol>
 <h4 id="SpringBoot整合Kafka"><a href="#SpringBoot整合Kafka" class="headerlink" title="SpringBoot整合Kafka"></a>SpringBoot整合Kafka</h4><h5 id="安装-6"><a href="#安装-6" class="headerlink" title="安装"></a>安装</h5><p>​		windows版安装包下载地址：<a target="_blank" rel="noopener" href="https://kafka.apache.org/downloads">https:&#x2F;&#x2F;</a><a target="_blank" rel="noopener" href="https://kafka.apache.org/downloads">kafka.apache.org&#x2F;downloads</a></p>
-<p>​		下载完毕后得到tgz压缩文件，使用解压缩软件解压缩即可使用，解压后得到如下文件</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220228181442155.png'><img src="/solid-octo-succotash/img%5Cimage-20220228181442155.png" alt="image-20220228181442155"></p>
+<p>​		下载完毕后得到tgz压缩文件，使用解压缩软件解压缩即可使用，解压后得到如下文件</p class='item-img' data-src='img\image-20220228170504793.png'><img src="img\image-20220228170504793.png">
+
 <p>​		建议使用windows版2.8.1版本。</p>
 <p><strong>启动服务器</strong></p>
 <p>​		kafka服务器的功能相当于RocketMQ中的broker，kafka运行还需要一个类似于命名服务器的服务。在kafka安装目录中自带一个类似于命名服务器的工具，叫做zookeeper，它的作用是注册中心，相关知识请到对应课程中学习。</p>
@@ -3378,8 +3376,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <p>​		之前说过，服务端要想监控客户端，需要主动的获取到对应信息并展示出来。但是目前我们并没有在客户端开发任何新的功能，但是服务端确可以获取监控信息，谁帮我们做的这些功能呢？咱们下一节再讲。</p>
 <h3 id="KF-6-3-监控原理"><a href="#KF-6-3-监控原理" class="headerlink" title="KF-6-3.监控原理"></a>KF-6-3.监控原理</h3><p>​		通过查阅监控中的映射指标，可以看到当前系统中可以运行的所有请求路径，其中大部分路径以&#x2F;actuator开头</p class='item-img' data-src='img\image-20220301170214076.png'><img src="img\image-20220301170214076.png" alt="image-20220301170214076" style="zoom: 50%;" />
 
-<p>​		首先这些请求路径不是开发者自己编写的，其次这个路径代表什么含义呢？既然这个路径可以访问，就可以通过浏览器发送该请求看看究竟可以得到什么信息。</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220301170723057.png'><img src="/solid-octo-succotash/img%5Cimage-20220301170723057.png" alt="image-20220301170723057"></p>
+<p>​		首先这些请求路径不是开发者自己编写的，其次这个路径代表什么含义呢？既然这个路径可以访问，就可以通过浏览器发送该请求看看究竟可以得到什么信息。</p class='item-img' data-src='img\image-20220301170723057.png'><img src="img\image-20220301170723057.png">
+
 <p>​		通过发送请求，可以得到一组json信息，如下</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;_links&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;self&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;beans&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/beans&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;caches-cache&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/caches/&#123;cache&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;caches&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/caches&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;health&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/health&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;health-path&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/health/&#123;*path&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;info&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/info&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;conditions&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/conditions&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;shutdown&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/shutdown&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;configprops&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/configprops&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;configprops-prefix&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/configprops/&#123;prefix&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;env&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/env&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;env-toMatch&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/env/&#123;toMatch&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;loggers&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/loggers&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;loggers-name&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/loggers/&#123;name&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;heapdump&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/heapdump&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;threaddump&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/threaddump&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;metrics-requiredMetricName&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/metrics/&#123;requiredMetricName&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;metrics&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/metrics&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;scheduledtasks&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/scheduledtasks&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;mappings&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;href&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://localhost:81/actuator/mappings&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;templated&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
 
@@ -3389,8 +3387,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark') document.documentEleme
 <p>​		当前信息与监控面板中的数据存在着对应关系</p class='item-img' data-src='img\image-20220301171025615.png'><img src="img\image-20220301171025615.png" alt="image-20220301171025615" style="zoom:50%;" />
 
 <p>​		原来监控中显示的信息实际上是通过发送请求后得到json数据，然后展示出来。按照上述操作，可以发送更多的以&#x2F;actuator开头的链接地址，获取更多的数据，这些数据汇总到一起组成了监控平台显示的所有数据。</p>
-<p>​		到这里我们得到了一个核心信息，监控平台中显示的信息实际上是通过对被监控的应用发送请求得到的。那这些请求谁开发的呢？打开被监控应用的pom文件，其中导入了springboot admin的对应的client，在这个资源中导入了一个名称叫做actuator的包。被监控的应用之所以可以对外提供上述请求路径，就是因为添加了这个包。</p>
-<p class='item-img' data-src='/solid-octo-succotash/img%5Cimage-20220301171437817.png'><img src="/solid-octo-succotash/img%5Cimage-20220301171437817.png" alt="image-20220301171437817"></p>
+<p>​		到这里我们得到了一个核心信息，监控平台中显示的信息实际上是通过对被监控的应用发送请求得到的。那这些请求谁开发的呢？打开被监控应用的pom文件，其中导入了springboot admin的对应的client，在这个资源中导入了一个名称叫做actuator的包。被监控的应用之所以可以对外提供上述请求路径，就是因为添加了这个包。</p class='item-img' data-src='img\image-20220301171437817.png'><img src="img\image-20220301171437817.png">
+
 <p>​		这个actuator是什么呢？这就是本节要讲的核心内容，监控的端点。</p>
 <p>​		Actuator，可以称为端点，描述了一组监控信息，SpringBootAdmin提供了多个内置端点，通过访问端点就可以获取对应的监控信息，也可以根据需要自定义端点信息。通过发送请求路劲**&#x2F;actuator<strong>可以访问应用所有端点信息，如果端点中还有明细信息可以发送请求</strong>&#x2F;actuator&#x2F;端点名称**来获取详细信息。以下列出了所有端点信息说明：</p>
 <table>
