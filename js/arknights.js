@@ -1,4 +1,5 @@
 /// <reference path="enviroment.d.ts" />
+<scripts  src: "https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"><scripts/>
 'use strict';
 function getElement(string, item = document.documentElement) {
     let tmp = item.querySelector(string);
